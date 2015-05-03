@@ -1,1 +1,12 @@
-<p>This is the partial for view 1.</p>
+<button ng-click="login()">LOGIN</button>
+
+<p>{{loginStatus}}</p>
+<button type="button" id="api" ng-click="api()">api user data call</button>
+<button type="button" id="remove_auth" ng-click="removeAuth()">remove auth</button>
+<button type="button" id="show_user" ng-click="showUser()">Show User</button>
+<button type="button" id="post_message" ng-click="postMessage()">Post Message</button>
+<pre>isReady: <span id="is_ready" ng-bind="facebookIsReady"></span></pre>
+<pre>status: <span id="login_status" ng-bind="loginStatus"></span></pre>
+<pre>username: <span id="api_first_name" ng-bind="user.first_name"></span></pre>
+	
+

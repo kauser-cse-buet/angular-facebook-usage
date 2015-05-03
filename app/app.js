@@ -5,8 +5,10 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
-  'myApp.version'
+  'myApp.version',
+  'facebook'
 ]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider', 'FacebookProvider', function($routeProvider, FacebookProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});
+  FacebookProvider.init('1063770353637032');
 }]);
