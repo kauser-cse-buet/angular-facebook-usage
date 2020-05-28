@@ -10,5 +10,5 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', 'FacebookProvider', function($routeProvider, FacebookProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});
-  FacebookProvider.init('1063770353637032');
+  FacebookProvider.init('<token>');
 }]);
